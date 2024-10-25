@@ -1,8 +1,7 @@
-# coding: utf-8
-
 # Use ./launch_tests.sh to launch these tests.
 
 from bs4 import BeautifulSoup
+
 from django_check_seo.checks import site
 
 html_content = """
@@ -118,8 +117,7 @@ def test_h2_1_nokw_image():
 
 
 def test_h2_1_kw():
-    from django_check_seo.checks_list import check_h2
-    from django_check_seo.checks_list import check_keywords
+    from django_check_seo.checks_list import check_h2, check_keywords
 
     site = init()
 
@@ -142,8 +140,8 @@ def test_h2_1_kw():
 
 def test_h2_2_kw():
     import copy
-    from django_check_seo.checks_list import check_h2
-    from django_check_seo.checks_list import check_keywords
+
+    from django_check_seo.checks_list import check_h2, check_keywords
 
     site = init()
 
@@ -169,8 +167,7 @@ def test_h2_2_kw():
 
 
 def test_h2_1_kws():
-    from django_check_seo.checks_list import check_h2
-    from django_check_seo.checks_list import check_keywords
+    from django_check_seo.checks_list import check_h2, check_keywords
 
     site = init()
 
@@ -191,8 +188,8 @@ def test_h2_1_kws():
 
 def test_h2_2_kws():
     import copy
-    from django_check_seo.checks_list import check_h2
-    from django_check_seo.checks_list import check_keywords
+
+    from django_check_seo.checks_list import check_h2, check_keywords
 
     site = init()
 

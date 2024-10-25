@@ -1,8 +1,7 @@
-# coding: utf-8
-
 # Use ./launch_tests.sh to launch these tests.
 
 from bs4 import BeautifulSoup
+
 from django_check_seo.checks import site
 
 html_content = """
@@ -145,8 +144,7 @@ def test_description_1_nokw_too_long_161():
 
 
 def test_description_1_kw():
-    from django_check_seo.checks_list import check_keywords
-    from django_check_seo.checks_list import check_description
+    from django_check_seo.checks_list import check_description, check_keywords
 
     site = init()
 
@@ -167,8 +165,7 @@ def test_description_1_kw():
 
 
 def test_description_1_kws():
-    from django_check_seo.checks_list import check_keywords
-    from django_check_seo.checks_list import check_description
+    from django_check_seo.checks_list import check_description, check_keywords
 
     site = init()
 
@@ -214,6 +211,7 @@ def test_description_1_length():
 
 def test_description_2():
     import copy
+
     from django_check_seo.checks_list import check_description
 
     site = init()

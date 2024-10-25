@@ -1,9 +1,6 @@
-# -*- coding: utf-8 -*-
-from __future__ import unicode_literals
-
 # Standard Library
 import re
-import sys
+from urllib.parse import urlparse  # pragma: no cover
 
 import unidecode
 from django.conf import settings
@@ -13,12 +10,6 @@ from django.utils.translation import pgettext
 
 # Local application / specific library imports
 from ..checks import custom_list
-
-# hacky trick to add python2 compatibility to a python3 project after python2 eol
-if sys.version_info.major == 2:
-    from urlparse import urlparse  # pragma: no cover
-else:
-    from urllib.parse import urlparse  # pragma: no cover
 
 
 def importance():

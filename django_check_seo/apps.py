@@ -1,5 +1,3 @@
-# -*- coding:utf-8 -*-
-
 # Third party
 from django.apps import AppConfig
 

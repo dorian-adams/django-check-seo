@@ -1,10 +1,9 @@
-# -*- coding: utf-8 -*-
-
 # Use ./launch_tests.sh to launch these tests.
 
 import re
 
 from bs4 import BeautifulSoup
+
 from django_check_seo.checks import site
 
 html_content = """
